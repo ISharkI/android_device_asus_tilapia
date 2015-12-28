@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2015 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,11 @@
 #
 
 # rild
-PRODUCT_PACKAGES := \
-    rild \
-    BasicSmsReceiver
+PRODUCT_PACKAGES += \
+    BasicSmsReceiver \
+    messaging \
+    libstlport \
+    rild
 
 PRODUCT_COPY_FILES := \
     device/asus/tilapia/fstab.grouper:root/fstab.grouper \
@@ -30,4 +32,4 @@ DEVICE_PACKAGE_OVERLAYS := \
 $(call inherit-product, device/asus/grouper/device-common.mk)
 
 # inherit from the non-open-source side, if present
-$(call inherit-product, vendor/asus/tilapia/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/tilapia/device-vendor.mk)
