@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The Android Open Source Project
+<!-- Copyright (C) 2015 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,12 +17,10 @@
 <!-- NFC resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
-    <!-- Whether the device can receive NFC data in setup wizard -->
-    <bool name="enable_nfc_provisioning">true</bool>
-
     <!-- The accepted mime-types when NFC is enabled in setup wizard.
          Mime-types must be lower case, wildcards are *not* accepted. -->
     <string-array name="provisioning_mime_types">
         <item>application/vnd.com.google.android.nfcprovision</item>
+        <item>application/com.android.managedprovisioning</item>
     </string-array>
 </resources>
