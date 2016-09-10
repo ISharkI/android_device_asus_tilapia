@@ -23,4 +23,5 @@
 add_lunch_combo aosp_tilapia-userdebug
 add_lunch_combo full_tilapia-userdebug
 add_lunch_combo omni_tilapia-userdebug
+add_lunch_combo du_tilapia-userdebug
 
