@@ -23,7 +23,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES := \
     device/asus/tilapia/rootdir/fstab.grouper:root/fstab.grouper \
-    device/asus/tilapia/rootdir/init.tilapia.rc:root/init.grouper.rc
+    device/asus/tilapia/rootdir/init.tilapia.rc:root/init.grouper.rc \
+    device/asus/tilapia/rootdir/init.tilapia.usb.rc:root/init.grouper.usb.rc
 
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/tilapia/overlay

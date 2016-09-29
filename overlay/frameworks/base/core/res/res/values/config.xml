@@ -59,6 +59,7 @@
          USB interfaces.  If the device doesn't want to support tething over USB this should
          be empty.  An example would be "usb.*" -->
     <string-array translatable="false" name="config_tether_usb_regexs">
+        <item>"rndis0"</item>
     </string-array>
 
     <!-- Array of allowable ConnectivityManager network types for tethering -->
@@ -75,6 +76,7 @@
          bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
          should be empty. -->
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
+        <item>"bt-pan"</item>
     </string-array>
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
@@ -98,8 +100,7 @@
          to this list.  If this is empty, no parts of the host USB bus will be excluded.
     -->
     <string-array name="config_usbHostBlacklist">
-        <!--  
-   -->
+        <!--  /dev/bus/usb/001 is used for the modem -->
         <item>/dev/bus/usb/001</item>
     </string-array>
 
