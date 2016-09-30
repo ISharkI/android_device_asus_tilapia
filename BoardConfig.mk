@@ -35,8 +35,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/asus/tilapia/bluetooth
 USE_CAMERA_STUB := true
 USE_PROPRIETARY_AUDIO_EXTENSIONS := false
 
-BOARD_HAL_STATIC_LIBRARIES := libdumpstate.grouper
-
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/tilapia
 
 -include vendor/asus/tilapia/BoardConfigVendor.mk
