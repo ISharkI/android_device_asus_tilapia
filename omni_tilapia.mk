@@ -22,6 +22,7 @@ TARGET_BOOTANIMATION_SIZE := 720x480
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/cdma.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/asus/tilapia/device.mk)
@@ -29,10 +30,10 @@ $(call inherit-product, device/asus/tilapia/device.mk)
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := omni_tilapia
 PRODUCT_DEVICE := tilapia
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Nexus 7
+PRODUCT_MANUFACTURER := Asus
 PRODUCT_RESTRICT_VENDOR_FILES := false
